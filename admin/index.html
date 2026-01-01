@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <title>Admin Panel</title>
 
     <!-- Load Decap CMS -->
     <script src="https://unpkg.com/decap-cms@latest/dist/decap-cms.js"></script>
   </head>
   <body>
+    <!-- CMS will render here -->
+    <div id="nc-root"></div>
 
-    <!-- Initialize CMS after script loads -->
+    <!-- Initialize CMS -->
     <script>
       window.CMS_MANUAL_INIT = true;
-      CMS.init();
+      CMS.init({
+        config: '/admin/config.yml'
+      });
     </script>
-
   </body>
 </html>
