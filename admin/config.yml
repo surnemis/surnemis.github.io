@@ -2,6 +2,8 @@ backend:
   name: github
   repo: surnemis/surnemis.github.io
   branch: main
+  auth_scope: repo
+  client_id: Ov23litNYNIT0wUekCkC
 
 publish_mode: simple
 
@@ -18,4 +20,5 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD" }
       - { label: "Content", name: "body", widget: "markdown" }
+
 
