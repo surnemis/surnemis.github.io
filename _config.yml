@@ -1,0 +1,11 @@
+title: My Friend's Blog
+description: A simple blog with easy posting
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Important for GitHub Pages + Decap CMS
+collections:
+  posts:
+    output: true
